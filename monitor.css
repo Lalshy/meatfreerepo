@@ -1,0 +1,564 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@media only screen and (min-width: 1286px) {
+
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	padding: 0;
+	max-width: 1920px;
+}
+
+.main {
+	width: 1024px;
+	background-color: #bad77b;	
+	margin: auto;
+	padding-top:10px;
+	padding-bottom:2em;
+}
+
+header {
+	width:100%;
+	height:50px;
+	position: relative;
+}
+
+.main-nav {
+	height: 50px;
+}
+
+.topnav {
+		position:absolute;
+		margin-top:30px;
+}
+
+	.logo-long {
+		display: none;
+	}
+.actionnav {
+	float:right;
+	margin-top:30px;
+}
+
+.actionnav a {
+	color:white;
+	padding:10px 30px;
+	margin-bottom:20px;
+	font-family: lalouzz;
+	background-image:url(images/blackboard-texture-seamless-optimized.jpg);
+}
+
+.actionnav a:hover {
+	color: #bad77b;
+}
+
+ul {
+	margin:0;
+}
+
+ul li.hamburger {
+	display: none;	
+}
+
+ul > li {
+	display:inline-block;
+	position: relative;
+	list-style: none;
+	margin: 10px;
+}
+
+ul a, ul li a {
+	color: black;
+	font-family:'Kosugi Maru',"sans-serif";
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	font-size: 18px;
+	padding: 20px 15px 20px 15px;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+li ul {
+	margin:0;
+	display:none;
+	list-style: none;
+	width:200px;
+	padding: 0;
+}
+
+li:hover ul {
+	display:flex;
+	flex-direction: column;
+	position: absolute;
+	background:black;
+}
+
+ul ul li a {
+	flex:1;
+	width: 100%;
+	color:white;
+	padding:20px 0px;
+	text-align: center;
+}
+
+ul li a:hover {
+	background-color: #bad77b;
+	transition: 0.2s;
+	color:black;
+}
+
+.hero {
+	width:100%;
+	max-width: 1524px;
+	height:650px;
+	margin: auto;
+	background-image: url(images/hero-image-optimized.jpg);
+	background-size:cover;
+	background-position: center;
+	display:flex;
+	justify-content:flex-end;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.cta {
+	text-align:center;
+	margin-right:30px;
+	margin-bottom: 80px;
+}
+
+.cta-button a {
+	display: block;
+	color:black;
+	text-decoration: none;
+	font-family: lalouzz;
+	font-size:2.5em;
+}
+
+.cta-button a:hover {
+ 	 transform: scale(1.1);
+	 transition:0.3s ease-in-out;
+}
+
+.intro, .recipes, .location, .veggie {
+	width:60%;
+	margin:auto;
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+}
+
+h1 {
+	font-family:orator-std;
+	font-style: normal;
+	font-weight: 400;
+	font-size:2.2em;
+	text-align: center;
+	color:white;
+	padding:15px;
+	border-style: solid;
+    border-width: medium;
+}
+#challenge {
+	border-style: solid;
+    border-width: medium;
+}
+
+p {
+	font-family:'Shadows Into Light', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.2em;
+	letter-spacing:1px;
+	color:white;
+	line-height: 1.5em;
+}
+
+#challenge-cta a{
+	display: block;
+	color:white;
+	background-image:url(images/blackboard-texture-seamless-optimized.jpg);
+	text-decoration: none;
+	font-family: lalouzz;
+	text-align: center;
+	font-size:22px;
+	margin:40px 150px;
+	border-radius:8px;
+	padding:20px;
+}
+
+#challenge-cta a:hover {
+	/*color:#bad77b;*/
+	transform: scale(1.1);
+	transition:0.2s ease-in-out;
+}
+
+.row {
+	width:100%;
+	margin:0;
+	padding:45px;
+	box-sizing: border-box;
+	background-image:url(images/white-washed-wood-optimized.jpg);
+	display:flex;
+	justify-content: space-around;
+}
+
+.aside {
+	width:33%;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+.aside-button {
+	width:180px;
+	margin:auto;
+	background:url(images/blackboard-texture-seamless-optimized.jpg);
+	text-align: center;
+	padding:10px;
+	margin-top:-20px;
+	box-sizing: border-box;
+}
+
+.aside-button:hover {
+	transform: scale(1.1);
+	transition:0.2s ease-in-out;
+}
+
+.aside-button a {
+	text-decoration: none;
+	font-family: lalouzz;
+	color:white;
+}
+
+.fruitnveg {
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.fruitnveg:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+h2 {
+	font-family:'Shadows Into Light', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.2em;
+	letter-spacing:1px;
+	color:white;
+	line-height: 1.5em;
+	
+}
+
+#recipes-heading {
+	border-style: solid;
+    border-width: medium;
+}
+
+/*Lightbox gallery modifications start here*/
+
+.lb-div {
+	width:100%;
+	height: auto;
+	margin:auto;
+	padding:10px 0px;
+	margin-top:25px;
+	text-align:center;
+	background-color:white;
+}
+
+.example-image {
+		width:180px;
+		height:180px;
+		margin:5px 5px;
+		border-radius: 3px;
+  		border: 4px solid transparent;
+		box-sizing: border-box;
+		opacity:0.6;
+		transition:0.3s;
+}
+
+.example-image:hover {
+	  	border-radius: 3px;
+  		border: 4px solid #bad77b;
+		box-sizing: border-box;
+		background-color:cadetblue 0.3;
+		opacity:1;
+		transition:0.3s;	
+}
+/*End of Lightbox modifications */
+
+.veg-out {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.veg-art {
+	display: flex; 
+ 	 padding: 0.5em;
+	box-sizing: border-box;
+ 	 width: 33%;
+}
+
+.veg-content {
+	display: flex;
+   	flex-direction: column;
+  	 background-color: #fff;
+  	 padding: 1em;
+	box-sizing: border-box;
+}
+
+.veggie {
+	align-self:center;
+}
+
+.tips {
+	color:black;
+}
+
+iframe {
+	text-align:center;
+	border-style: solid;
+    border-width: 20px;
+	outline: auto;
+	outline-width:10px;
+	outline-color: #bad77b;
+	color:white;
+	box-sizing: border-box;
+}
+		.locationmap {
+			width:80%;
+			margin: auto;
+		position: relative;
+	padding-bottom:35%;
+	padding-top: 25px;
+	height:0;
+}
+	
+	.locationmap iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+.logo-wrapper {
+	position: absolute;
+}
+.logo {
+	width:250px;
+	position:absolute;
+	margin-top:-65px;
+	margin-left:4em;
+	overflow: visible;
+	z-index: 99;
+}
+	.mobile-logo {
+		display: none;
+	}
+
+footer {
+	background-image: url(images/white-washed-wood-optimized.jpg);
+	overflow: hidden;
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+/*form starts here. Referenced from HTML & CSS by Jon Duckett*/
+
+#subscribe {
+	margin:auto;
+	color:black;
+	font-size:2em;
+	text-align: center;
+	padding-bottom:20px;
+}
+
+input {
+	margin:auto;
+	font-size:120%;
+	color:#5a5854;
+	background-color:#f2f2f2;
+	border:2px solid #bad77b;
+	border-radius: 5px;
+	padding: 5px 5px 5px 30px;
+	display:block;
+	margin-bottom:10px;
+}
+
+input:focus, input:hover {
+	background-color: #fff;
+}
+
+input#submit {
+	color:#444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom:2px solid #b2b2b2;
+	background-color:#bad77b;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bad77b), to(#638617));
+	background:-moz-linear-gradient(top,#bad77b,#638617);
+	background:-o-linear-gradient(top,#bad77b,#638617);
+	background:-ms-linear-gradient(top,#bad77b,#638617);
+}
+
+input#submit:hover {
+	color:#333333;
+	border:2px solid #bad77b;
+	border-top:2px solid #b2b2b2;
+	background-color:#a0dbc4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#638617), to(#bad77b));
+	background:-moz-linear-gradient(top,#638617,#bad77b);
+	background:-o-linear-gradient(top,#638617,#bad77b);
+	background:-ms-linear-gradient(top,#638617,#bad77b);
+}
+
+/*form ends here*/
+
+.footerbox {	
+	width: 1024px;
+	margin: auto;
+}
+
+.footer-text {
+	width:60%;
+	margin:auto;
+	padding-top:20px;
+}
+.footer-text > p {
+	color:black;
+	text-align: center;
+	line-height:1.5em;
+}
+
+.sociallinks {
+	display: none;	
+}
+hr {
+	clear: both;
+}
+
+.links {
+	width: 100%;
+	text-align: center;
+}
+
+/* social menu adapted from CopePen by Lauren Clark https://codepen.io/Deadlymuffin/pen/hGiqo/ */
+
+.follow {
+	text-align: center;
+	display:block;
+	font-family:'Shadows Into Light', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.2em;
+	letter-spacing:1px;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:flex;
+	justify-content: space-around;
+    margin: 0 auto;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline-flex;
+	flex-direction: row;
+	justify-content:space-around;
+}
+
+.social-icons a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+	background: none;
+	color:#fff;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+}
